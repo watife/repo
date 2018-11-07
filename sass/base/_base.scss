@@ -1,0 +1,29 @@
+// global resets
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+
+    @media only screen and(max-width: $bp--large) {
+        font-size: 50%;
+    }
+
+     @media only screen and (max-width: $bp--tiny){
+        font-size: 40%;
+    }
+}
+
+body {
+    box-sizing: border-box;
+    background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: $color-grey-dark-2;
+    min-height: 100vh;
+}
